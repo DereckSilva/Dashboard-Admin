@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Poppins;
+    src: url("./assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face{
+    font-family: PoppinsLight;
+    src: url("./assets/fonts/Poppins/Poppins-Light.ttf")
+}
