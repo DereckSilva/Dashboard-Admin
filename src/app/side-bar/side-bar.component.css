@@ -1,38 +1,44 @@
 /*geral da navegação*/
 nav{
+    float: left;
     background: #4D44B5;
     width: 245px;
     height: 50em;
     color: #ffff;
     padding-left: 35px;
     padding-top: 35px;
-    display: flex;
-    flex-direction: column;
-    flex-flow: column;
+    font-family: 'Poppins';
 }
 
 /*edição dentro do título da nav*/
-nav > h2{
-    font-family: 'Poppins';
-}
-nav > h2 > span {
+nav h2 span {
     background: linear-gradient(180deg,#FCC43E -241.95%,rgba(252, 196, 62, 0));
     border-radius: 15px;
-    padding: 5px;
+    padding: 5px 10px;
 }
 
 /*edição do link */
-nav > a{
+nav a{
     padding:10px;
     width:100%;
     margin-top: 5px;
     text-decoration: none;
     color: #fff;
     font-family: 'PoppinsLight';
-    transition: all 0.5;
+    display: block;
+    cursor: pointer;
 }   
 
-nav > a:hover{
+nav a.active{
+    text-decoration: none;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    color: #4D44B5;
+    font-family: 'PoppinsLight';
+    background-color: #ffff;
+    padding: 10px;  
+}
+nav a:hover {
     text-decoration: none;
     border-top-left-radius: 35px;
     border-bottom-left-radius: 35px;
@@ -42,12 +48,6 @@ nav > a:hover{
     padding: 10px;
 }
 
-nav > a:active{
-    text-decoration: none;
-    border-top-left-radius: 35px;
-    border-bottom-left-radius: 35px;
-    color: #4D44B5;
-    font-family: 'PoppinsLight';
-    background-color: #ffff;
-    padding: 10px;
+.espacamento{
+    padding-left: 10px;
 }

@@ -1,13 +1,14 @@
 <nav>
     <h2><span>D</span> Dashboard</h2>
-    <a href=""><fa-icon [icon]="faHouse"></fa-icon> Home</a> 
-    <a href=""> <mat-icon>person_pin</mat-icon> Clientes</a> 
-    <a href=""><mat-icon>store</mat-icon> Lojistas</a> 
-    <a href=""><mat-icon>event</mat-icon> Eventos</a> 
-    <a href=""><mat-icon>attach_money</mat-icon> Financeiro</a> 
-    <a href=""><mat-icon>fastfood</mat-icon> Food</a> 
-    <a href=""><mat-icon>supervisor_account</mat-icon> Usuarios</a> 
-    <a href=""><mat-icon>chat_bubble_outline</mat-icon> Chat</a> 
-    <a href=""><mat-icon>analytics</mat-icon> Logistic Activity</a> 
-</nav>
+    <a routerLink="home" routerLinkActive='active'><fa-icon [icon]="faHouse"></fa-icon><span class="espacamento">Home</span></a> 
+    <a routerLink="clientes" routerLinkActive="active"><fa-icon [icon]="faUserTie"></fa-icon><span class="espacamento">Clientes</span></a> 
+    <a router=""><fa-icon [icon]="faShop"></fa-icon><span class="espacamento">Lojistas</span></a> 
+    <a router=""><fa-icon [icon]="faCalendarDay"></fa-icon><span class="espacamento">Eventos</span></a> 
+    <a router=""><fa-icon [icon]="faCoins"></fa-icon><span class="espacamento">Financeiro</span></a> 
+    <a router=""><fa-icon [icon]="faUtensils"></fa-icon><span class="espacamento">Food</span></a> 
+    <a router=""><fa-icon [icon]="faUsers"></fa-icon><span class="espacamento">Usuarios</span></a> 
+    <a router=""><fa-icon [icon]="faRocket"></fa-icon><span class="espacamento">Chat</span></a> 
+    <a router=""><fa-icon [icon]="faChartSimple"></fa-icon><span class="espacamento">Logistic Activity</span></a> 
+</nav> 
 
+<router-outlet></router-outlet>
